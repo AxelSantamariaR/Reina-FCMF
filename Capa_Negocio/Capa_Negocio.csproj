@@ -42,7 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="NegocioAuthentication .cs" />
-    <Compile Include="NegocioTablas.cs" />
+    <Compile Include="NegocioUsuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

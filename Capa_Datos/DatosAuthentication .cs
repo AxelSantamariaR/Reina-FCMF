@@ -38,7 +38,7 @@ namespace Capa_Datos
                             Username = dt.Rows[0]["Username"].ToString(),
                             PerfilUsuario = new PerfilUsuario
                             {
-                                Id = Convert.ToInt32(dt.Rows[0]["Id"])
+                                Id = Convert.ToInt32(dt.Rows[0]["PerfilUsuarioId"])
                             }
                         };
                     }

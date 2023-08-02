@@ -1,4 +1,5 @@
-﻿using Capa_Negocio;
+﻿using Capa_Entidad;
+using Capa_Negocio;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,17 +15,19 @@ namespace Capa_Presentacion.VistaAdministracion
 {
     public partial class InicioAdministracion : Form
     {
-        NegocioTablas negTab = new NegocioTablas();
+        NegocioUsuarios negUsu = new NegocioUsuarios();
         int bandera = 1;
+        Usuario UsuarioLogeado;
 
-        public InicioAdministracion()
+        public InicioAdministracion(Usuario usuario)
         {
             InitializeComponent();
+            UsuarioLogeado = usuario;
         }
 
         private void LlenarTabla(string transaccion)
         {
-            dataGridView1.DataSource = negTab.Tablas(transaccion);
+            dataGridView1.DataSource = negUsu.Tablas(transaccion);
         }
 
         private void MostrarTabla(int bandera, string titulo, string transaccion)
@@ -34,14 +37,26 @@ namespace Capa_Presentacion.VistaAdministracion
             LlenarTabla(transaccion);
         }
 
-        private void InicioAdministracion_Load(object sender, EventArgs e)
+        private void MostrarMensaje(string titulo, string message)
         {
-            btnAdministradores.Parent   = pictureBox1;
-            btnAsesores.Parent          = pictureBox1;
-            btnEstudiantes.Parent       = pictureBox1;
-            MostrarTabla(1, "Administradores", "TablaAdministrador");
+            if (titulo == "Enhorabuena")
+            {
+                MessageBox.Show(message, titulo, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show(message, titulo, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
+        private void InicioAdministracion_Load(object sender, EventArgs e)
+        {
+            label1.Text = "Bienvenido "+ UsuarioLogeado.Nombres + " " +UsuarioLogeado.Apellidos;
+            btnAdministradores.Parent = pictureBox1;
+            btnAsesores.Parent = pictureBox1;
+            btnEstudiantes.Parent = pictureBox1;
+            MostrarTabla(1, "Administradores", "TablaAdministrador");
+        }
 
         private void pictureBox2_MouseEnter(object sender, EventArgs e)
         {
@@ -101,20 +116,34 @@ namespace Capa_Presentacion.VistaAdministracion
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             AgregarUsuario agregar = new AgregarUsuario(bandera);
-            agregar.ShowDialog();
-            switch (bandera)
+            if (agregar.ShowDialog() == DialogResult.OK)
             {
-                case 1:
-                    MostrarTabla(1, "Administradores", "TablaAdministrador");
-                    break;
+                Respuesta respuesta = null;
 
-                case 2:
-                    MostrarTabla(2, "Asesores", "TablaAsesores");
-                    break;
+                switch (bandera)
+                {
+                    case 1:
+                        Usuario administrador = agregar.GetUsuario();
+                        respuesta = negUsu.AgregarAdmiOrGestor("AGREGAR_ADMINISTRADOR", administrador);
+                        MostrarTabla(1, "Administradores", "TablaAdministrador");
+                        break;
 
-                case 3:
-                    MostrarTabla(3, "Estudiantes", "TablaEstudiantes");
-                    break;
+                    case 2:
+                        Usuario gestor = agregar.GetUsuario();
+                        respuesta = negUsu.AgregarAdmiOrGestor("AGREGAR_ASESOR", gestor);
+                        MostrarTabla(2, "Asesores", "TablaAsesores");
+                        break;
+
+                    case 3:
+                        Estudiante estudiante = agregar.GetEstudiante();
+                        respuesta = negUsu.AgregarEstudiante("AGREGAR_ESTUDIANTE", estudiante);
+                        MostrarTabla(3, "Estudiantes", "TablaEstudiantes");
+                        break;
+                }
+                if (respuesta != null)
+                {
+                    MostrarMensaje(respuesta.Titulo, respuesta.Mensaje);
+                }
             }
         }
     }

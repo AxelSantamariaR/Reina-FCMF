@@ -28,8 +28,6 @@ namespace Capa_Presentacion
         private void Form1_Load(object sender, EventArgs e)
         {
             label1.Parent = pictureBox1;
-            InicioAdministracion inicioAdministracion = new InicioAdministracion();
-            inicioAdministracion.ShowDialog();
         }
 
         private void pictureBox4_MouseEnter(object sender, EventArgs e)
@@ -56,14 +54,14 @@ namespace Capa_Presentacion
             }
         }
 
-        private void AbrirModulo(int perfilUsuario)
+        private void AbrirModulo(Usuario usuario)
         {
             Form formulario;
 
-            switch (perfilUsuario)
+            switch (usuario.PerfilUsuario.Id)
             {
                 case 1:
-                    formulario = new InicioAdministracion();
+                    formulario = new InicioAdministracion(usuario);
                     Hide();
                     break;
 
@@ -93,7 +91,7 @@ namespace Capa_Presentacion
                 Usuario usuario = neg.Login(txtUser.Text, txtPassword.Text);
                 if (usuario != null)
                 {
-                    AbrirModulo(usuario.PerfilUsuario.Id);
+                    AbrirModulo(usuario);
                 }
                 else
                 {

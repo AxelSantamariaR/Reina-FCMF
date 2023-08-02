@@ -10,7 +10,7 @@ namespace Capa_Entidad
     {
         public int Id { get; set; }
 
-        public string Identifiacion { get; set; }
+        public string Identificacion { get; set; }
 
         public string Nombres { get; set; }
 

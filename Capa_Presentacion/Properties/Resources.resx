@@ -121,8 +121,14 @@
   <data name="Administrador_Estudiante" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Administrador_Estudiante.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Img-Identificacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img-Identificacion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Administrador-Admi-Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Administrador-Admi-Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Img-Email" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img-Email.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Fondo-Lateral-Inicio-Administrador" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Fondo-Lateral-Inicio-Administrador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -132,6 +138,9 @@
   </data>
   <data name="Img-Password" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Img-Password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Administrador-Boton-Agregar-Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Administrador-Boton-Agregar-Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="PageError" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PageError.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,11 +154,11 @@
   <data name="PageError-Boton-Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PageError-Boton-Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Login-Boton-Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Login-Boton-Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Img-Password-Eyes-Hide" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Img-Password-Eyes-Hide.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Administrador-Fondo-Agregar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Administrador-Fondo-Agregar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="PageError-Boton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PageError-Boton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,8 +169,8 @@
   <data name="Img-Password-Eyes" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Img-Password-Eyes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Administrador-Boton-Agregar-Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Administrador-Boton-Agregar-Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Login-Boton-Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login-Boton-Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Fondo-Login" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Fondo-Login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,7 +184,7 @@
   <data name="Administrador_Gestor_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Administrador_Gestor_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Administrador-Fondo-Agregar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Administrador-Fondo-Agregar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Img-Names" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img-Names.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -189,5 +189,14 @@
   <ItemGroup>
     <None Include="Resources\Administrador-Fondo-Agregar.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Img-Identificacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Img-Email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Img-Names.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
