@@ -1,0 +1,6 @@
+C:\Users\VILLAMAR\Desktop\ReinaDeLaFacultad\Capa_Entidad\bin\Debug\Capa_Entidad.dll
+C:\Users\VILLAMAR\Desktop\ReinaDeLaFacultad\Capa_Entidad\bin\Debug\Capa_Entidad.pdb
+C:\Users\VILLAMAR\Desktop\ReinaDeLaFacultad\Capa_Entidad\obj\Debug\Capa_Entidad.csproj.AssemblyReference.cache
+C:\Users\VILLAMAR\Desktop\ReinaDeLaFacultad\Capa_Entidad\obj\Debug\Capa_Entidad.csproj.CoreCompileInputs.cache
+C:\Users\VILLAMAR\Desktop\ReinaDeLaFacultad\Capa_Entidad\obj\Debug\Capa_Entidad.dll
+C:\Users\VILLAMAR\Desktop\ReinaDeLaFacultad\Capa_Entidad\obj\Debug\Capa_Entidad.pdb
