@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Shared\SubirImagen.cs" />
     <Compile Include="Vista404\Error404.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +79,36 @@
     <Compile Include="VistaEstudiante\InicioEstudiante.Designer.cs">
       <DependentUpon>InicioEstudiante.cs</DependentUpon>
     </Compile>
+    <Compile Include="VistaGestor\AgregarFotosAlbum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VistaGestor\AgregarFotosAlbum.Designer.cs">
+      <DependentUpon>AgregarFotosAlbum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGestor\CrearAlbum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VistaGestor\CrearAlbum.Designer.cs">
+      <DependentUpon>CrearAlbum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGestor\GestorAlbumes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VistaGestor\GestorAlbumes.Designer.cs">
+      <DependentUpon>GestorAlbumes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGestor\GestorInscripciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VistaGestor\GestorInscripciones.Designer.cs">
+      <DependentUpon>GestorInscripciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VistaGestor\GestorResultados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VistaGestor\GestorResultados.Designer.cs">
+      <DependentUpon>GestorResultados.cs</DependentUpon>
+    </Compile>
     <Compile Include="VistaGestor\InicioGestor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +136,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="VistaAutenticacion\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VistaGestor\AgregarFotosAlbum.resx">
+      <DependentUpon>AgregarFotosAlbum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VistaGestor\CrearAlbum.resx">
+      <DependentUpon>CrearAlbum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VistaGestor\GestorAlbumes.resx">
+      <DependentUpon>GestorAlbumes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VistaGestor\GestorInscripciones.resx">
+      <DependentUpon>GestorInscripciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VistaGestor\GestorResultados.resx">
+      <DependentUpon>GestorResultados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VistaGestor\InicioGestor.resx">
+      <DependentUpon>InicioGestor.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -197,6 +246,78 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Img-Names.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CerrarSesion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo-Lateral-Inicio-Gestor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gestor-Inscripcion-Hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gestor-Inscripciones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gestor-Album-Hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gestor-Album.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gestor-Resultado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gestor-Resultado-Hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gestor-Inscri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GestorInscri-Hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gestor-Fondo-Inscripcion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Img-Telefono.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Img-Fecha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Img-Nacionalidad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Img-Idioma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Img-Titulo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Img-Foto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Img-Pasantiempo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Img-Habilidad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Img-Interes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Img-Aspiracion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gestor-Album-Fondo-Agregar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gestor-Album-Fotos-Agregar-Hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gestor-Album-Fotos-Agregar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

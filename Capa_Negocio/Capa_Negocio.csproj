@@ -42,6 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="NegocioAuthentication .cs" />
+    <Compile Include="NegocioCandidatas.cs" />
+    <Compile Include="NegocioCombos.cs" />
     <Compile Include="NegocioUsuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

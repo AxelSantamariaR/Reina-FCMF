@@ -35,8 +35,14 @@ C:\Users\VILLAMAR\Desktop\Por ahora\Reina-FCMF\Capa_Presentacion\obj\Debug\Capa_
 C:\Users\VILLAMAR\Desktop\Por ahora\Reina-FCMF\Capa_Presentacion\obj\Debug\Capa_Presentacion.VistaAdministracion.AgregarUsuario.resources
 C:\Users\VILLAMAR\Desktop\Por ahora\Reina-FCMF\Capa_Presentacion\obj\Debug\Capa_Presentacion.VistaAdministracion.InicioAdministracion.resources
 C:\Users\VILLAMAR\Desktop\Por ahora\Reina-FCMF\Capa_Presentacion\obj\Debug\Capa_Presentacion.Form1.resources
+C:\Users\VILLAMAR\Desktop\Por ahora\Reina-FCMF\Capa_Presentacion\obj\Debug\Capa_Presentacion.VistaGestor.InicioGestor.resources
 C:\Users\VILLAMAR\Desktop\Por ahora\Reina-FCMF\Capa_Presentacion\obj\Debug\Capa_Presentacion.csproj.GenerateResource.cache
 C:\Users\VILLAMAR\Desktop\Por ahora\Reina-FCMF\Capa_Presentacion\obj\Debug\Capa_Presentacion.csproj.CoreCompileInputs.cache
 C:\Users\VILLAMAR\Desktop\Por ahora\Reina-FCMF\Capa_Presentacion\obj\Debug\Capa_Presentacion.csproj.CopyComplete
 C:\Users\VILLAMAR\Desktop\Por ahora\Reina-FCMF\Capa_Presentacion\obj\Debug\Capa_Presentacion.exe
 C:\Users\VILLAMAR\Desktop\Por ahora\Reina-FCMF\Capa_Presentacion\obj\Debug\Capa_Presentacion.pdb
+C:\Users\VILLAMAR\Desktop\Por ahora\Reina-FCMF\Capa_Presentacion\obj\Debug\Capa_Presentacion.VistaGestor.GestorInscripciones.resources
+C:\Users\VILLAMAR\Desktop\Por ahora\Reina-FCMF\Capa_Presentacion\obj\Debug\Capa_Presentacion.VistaGestor.GestorAlbumes.resources
+C:\Users\VILLAMAR\Desktop\Por ahora\Reina-FCMF\Capa_Presentacion\obj\Debug\Capa_Presentacion.VistaGestor.GestorResultados.resources
+C:\Users\VILLAMAR\Desktop\Por ahora\Reina-FCMF\Capa_Presentacion\obj\Debug\Capa_Presentacion.VistaGestor.CrearAlbum.resources
+C:\Users\VILLAMAR\Desktop\Por ahora\Reina-FCMF\Capa_Presentacion\obj\Debug\Capa_Presentacion.VistaGestor.AgregarFotosAlbum.resources

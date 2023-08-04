@@ -51,10 +51,11 @@ namespace Capa_Presentacion.VistaAdministracion
 
         private void InicioAdministracion_Load(object sender, EventArgs e)
         {
-            label1.Text = "Bienvenido "+ UsuarioLogeado.Nombres + " " +UsuarioLogeado.Apellidos;
-            btnAdministradores.Parent = pictureBox1;
-            btnAsesores.Parent = pictureBox1;
-            btnEstudiantes.Parent = pictureBox1;
+            label1.Text                 = "     Módulo Administrador - Bienvenido " + UsuarioLogeado.Nombres;
+            btnAdministradores.Parent   = pictureBox1;
+            btnAsesores.Parent          = pictureBox1;
+            btnEstudiantes.Parent       = pictureBox1;
+            btnCerrar.Parent            = pictureBox1;
             MostrarTabla(1, "Administradores", "TablaAdministrador");
         }
 
@@ -145,6 +146,18 @@ namespace Capa_Presentacion.VistaAdministracion
                     MostrarMensaje(respuesta.Titulo, respuesta.Mensaje);
                 }
             }
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            Form1 login = new Form1();
+            login.ShowDialog();
+        }
+
+        private void InicioAdministracion_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

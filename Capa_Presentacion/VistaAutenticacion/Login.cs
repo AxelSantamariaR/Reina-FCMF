@@ -66,7 +66,7 @@ namespace Capa_Presentacion
                     break;
 
                 case 2:
-                    formulario = new InicioGestor();
+                    formulario = new InicioGestor(usuario);
                     Hide();
                     break;
 
